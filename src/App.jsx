@@ -6,14 +6,14 @@ import Webcam from 'react-webcam'
 
 export default function App() {
 
-  const WebcamRef = useRef(null)
+  const webcamRef = useRef(null)
   const canvasRef = useRef(null)
 
   return (
     <>
       <div className="App">
         <header className="App-header">
-          <Webcam ref={WebcamRef} style={{
+          <Webcam ref={webcamRef} style={{
             position: "absolute",
             marginLeft: "auto",
             marginRight: "auto",
