@@ -9,6 +9,17 @@ export default function App() {
   const webcamRef = useRef(null)
   const canvasRef = useRef(null)
 
+  // Load posenet 
+  const runPosenet = async () => {
+    const net = await posenet.load({
+      inputResolution: { width: 640, height: 480 }, scale: 0.5
+    })
+    // 
+    setInterval(()=>{
+
+    },10)
+  }
+
   return (
     <>
       <div className="App">
