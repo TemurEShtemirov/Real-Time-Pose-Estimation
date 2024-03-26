@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import './App.css';
 import * as posenet from '@tensorflow-models/posenet';
 import Webcam from 'react-webcam';
+import { drawKeypoints, drawSkeleton } from './utilities';
 
 export default function App() {
   const webcamRef = useRef(null);
